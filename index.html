@@ -1,152 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-.fa {
-  padding: 10px;
-  font-size: 50px;
-  width: 30px;
-  text-align: center;
-  margin-left: 10px;
-  margin-bottom: 10px; 
-  text-decoration: none;
-  border-radius: 50%;
-}
-  
-  
-  
-  .fa:hover {
-  opacity: 0.7; }
-  
-  .fa-facebook {
-  color: white;
-  width: 1em;
-  height: 1em; 
-  text-height: 2px; 
-  }
-  
-  .fa-twitter {
-  color: white; 
-  width: 1em;
-  height: 1em; 
-  text-height: 2px; 
-  }
-  
-  .fa-instagram {
-  color: white;
-  width: 1em;
-  height: 1em;
-  text-height: 2px;
-  }
-	
-    .items { display: inline }
-</style>
-</head>
-<body>
-
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
-
-<header>
-  <h2>Cities</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
-
-<footer>
- <div class="icons">
-	 <ul class="list">
-     	<li class="items"><a href="https://www.facebook.com/dawson.wagner.359" class="fa fa-facebook"></a></li>
-     
-     	<li class="items"><a href="https://instagram.com/dawsonwagnerrr" class="fa fa-instagram"></a></li>
-     
-     	<li class="items"><a href="https://twitter.com/DawsonWagner15" class="fa fa-twitter">
-  </a></li>
-  	</ul>
-</div>
-</footer>
-
-<link id="facebook" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</body>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Google</title>
+        
+        <style>
+            .fa {
+                text-decoration: none;
+                color: black;
+                font-size: .9em
+            }
+            
+            body {
+                font-family: arial;
+                background-color: rgb(243, 244, 245);
+            }
+            
+            .navigation li {
+             display: inline-block;  
+             margin-left: 4em;
+             padding-top: 10px;
+            }
+            
+            .pixel3a {
+                width: 70%;
+                float: right;
+                background-color: #1b1b1c;
+                padding-left: 0px;
+            }
+            
+            .header {
+                height: 50px;
+                background-color: rgb(243, 244, 245);
+            }
+            
+            .grey {
+                background-color: #1b1b1c;
+                float: left;
+                width: 30%;
+                height: 888px;
+                padding: 0px;
+            }
+            
+            .googlelogo {
+                width: 2em;
+                float: left;
+                padding-left: 40px;
+            }
+            
+            .fa-phone {
+                padding-left: 0px;
+            }
+            
+            .fa:hover {
+                color: #7295cc;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <img class="googlelogo" src="GoogleLogo.png">
+                <ul class="navigation">    
+            <li><a class="fa fa-phone" href="phone.html">Phones</a></li>
+            <li><a class="fa fa-home" href="connected-home">Connected Home</a></li>
+            <li><a class="fa fa-gaming" href="gaming">Gaming</a></li>
+            <li><a class="fa fa-laptop" href="laptops">Laptops</a></li>
+               </ul>
+        </div>
+         <div>
+            <div class="phone">
+            <img class="pixel3a" src="Pixel3a.png">
+            </div>
+        
+            <div class="grey">
+            <p>Test</p>
+            </div>
+        </div>
+    </body>
 </html>
